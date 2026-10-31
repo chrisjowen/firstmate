@@ -1,0 +1,23 @@
+== Case A: exact docket reviewer command, launched bare (claude -p ... --model haiku --no-session-persistence --permission-mode dontAsk), cwd=home
+  claude exit=0 out=ok
+  probe: ATTENDED=0 FM_NO_LOCK=unset
+  state/.lock: absent
+== Case B: FM_NO_LOCK=1 + FM_SESSIONSTART_ALLOW_UNATTENDED=1 claude -p (override must NOT beat FM_NO_LOCK)
+  claude exit=0 out=ok
+  probe: ATTENDED=0 FM_NO_LOCK=1
+  state/.lock: absent
+== Case C: interactive (attended) claude in a private tmux socket, cwd=home
+  probe: MISSING
+  state/.lock: absent
+  pane tail:
+     /private/var/folders/3t/mxz82fbj2f38fr9nyd08zjb00000gn/T/fm-extra.mJdX4c/interactive
+     Quick safety check: Is this a project you created or one you trust? (Like your own code, a well-known open source project, or work from your team). If not, take a moment to review what's in this
+     folder first.
+     Claude Code'll be able to read, edit, and execute files here.
+     Security guide
+     ❯ No, exit
+       Yes, I trust this folder
+     Enter to confirm · Esc to cancel
+== Case D: FM_NO_LOCK=1 interactive (attended) claude
+  probe: MISSING
+  state/.lock: absent

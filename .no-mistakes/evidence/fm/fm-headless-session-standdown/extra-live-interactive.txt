@@ -1,0 +1,15 @@
+== Case C: interactive (attended) claude in a private tmux socket, cwd=home
+  probe: ATTENDED=1 FM_NO_LOCK=unset
+  state/.lock: PRESENT (pid 72228)
+  pane tail:
+    ▝▜██████▀  Haiku 4.5 · Claude Max
+      ▝▝ ▝▝    /private/var/folders/3t/mxz82fbj2f38fr9nyd08zjb00000gn/T/fm-extra.K3o1m8/interactive
+    ⚠ AGENTS.md is over the 40.0k-char limit (51.4k chars) · /memory to free up context
+                                                                                                         tmux detected · scroll with PgUp/PgDn · or add 'set -g mouse on' to ~/.tmux.conf for wheel scroll
+    ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ❯ Try "fix typecheck errors"
+    ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      ⏸ manual mode on · ? for shortcuts · ← for agents
+== Case D: FM_NO_LOCK=1 interactive (attended) claude
+  probe: ATTENDED=1 FM_NO_LOCK=1
+  state/.lock: absent
