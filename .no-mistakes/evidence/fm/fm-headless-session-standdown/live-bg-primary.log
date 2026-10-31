@@ -1,0 +1,4 @@
+### Scenario E: claude --bg background-session primary in a lab home (session 83a3fe8e)
+hook env probe: ATTENDED=0 JOB_DIR_BASENAME=83a3fe8e SESSION_ID_PREFIX=83a3fe8e
+state: .host-mirror.jsonl .inactive-outcome-reconcile .lock .lock-session .session-start-agents-baseline .session-start-complete .startup-network.delivered .startup-network.report .startup-network.status .startup-network.timings .trace-context-effective .wake-queue home-summary.json terminal-outcomes 
+lock pid: 61683 -> claude bg-spare --bg-spare /tmp/cc-daemon-501/df145a21/spare/6571848a.claim.sock

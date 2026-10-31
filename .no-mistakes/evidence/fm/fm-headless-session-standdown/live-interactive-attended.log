@@ -1,0 +1,13 @@
+### Scenario C: captain's attended interactive claude in the same lab home after the headless session (tmux -L fm-lab, FM_HOME=lab)
+state: .inactive-outcome-reconcile .lock .lock-session .session-start-agents-baseline .session-start-complete .startup-network.delivered .startup-network.report .startup-network.status .startup-network.timings .trace-context-effective .wake-queue home-summary.json terminal-outcomes 
+lock pid: 97155 -> claude --model haiku
+--- pane:
+ ▐▛███▛█   Claude Code v2.1.280
+▝▜██████▀  Haiku 4.5 · Claude Max
+  ▝▝ ▝▝    /private/var/folders/3t/mxz82fbj2f38fr9nyd08zjb00000gn/T/fm-lab.4mT78V/agentfallback
+⚠ AGENTS.md is over the 40.0k-char limit (51.4k chars) · /memory to free up context
+                                                                                                                                                       Update available! Run: brew upgrade claude-code
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏸ manual mode on · ? for shortcuts · ← for agents

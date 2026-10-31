@@ -1,0 +1,4 @@
+### Scenario F: claude -p child inheriting a background parent's CLAUDE_JOB_DIR (83a3fe8e) in a fresh lab home
+hook env probe: ATTENDED=0 JOB_DIR_BASENAME=83a3fe8e SESSION_ID_PREFIX=79a664da
+state: []
+lock: none

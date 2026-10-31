@@ -1,0 +1,2 @@
+ok - run wrapper: an unattended Claude or FM_NO_LOCK=1 session stands down silently; attended, inherited, bound background, and opted-in opens take the helm
+exit=0

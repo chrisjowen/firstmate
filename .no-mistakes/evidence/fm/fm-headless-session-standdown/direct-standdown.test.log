@@ -1,0 +1,2 @@
+ok - a direct session start stands down for an unattended, mismatched background, or FM_NO_LOCK=1 session and takes the lock when attended, bound background, or opted in
+exit=0

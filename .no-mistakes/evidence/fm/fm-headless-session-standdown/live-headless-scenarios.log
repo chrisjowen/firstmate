@@ -1,0 +1,12 @@
+### Scenario A: docket-shaped headless claude -p in the home, Bash allowed, told to run session start itself
+```
+fm-session-start: stood down: this session is marked FM_NO_LOCK=1 or is an unattended Claude session, so it never takes the fleet session lock
+EXIT=0
+```
+--- fleet lock taken? NO
+--- state dir: 
+
+### Scenario B: FM_NO_LOCK=1 + FM_SESSIONSTART_ALLOW_UNATTENDED=1 headless claude -p (override must not beat FM_NO_LOCK)
+ok
+--- fleet lock taken? NO
+--- state dir: 
